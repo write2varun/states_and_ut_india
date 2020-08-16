@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [1.0.1] - 2020-08-15
 
-* TODO: Describe initial release.
+- Simple Dart library to convert state names to abbreviations and vice-versa.

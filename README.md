@@ -1,14 +1,67 @@
 # states_and_ut_india
 
-A new Flutter package.
+A simple Dart library to convert state names to abbreviations and vice-versa
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+Add the following to `dependencies` section in your pubspec.yml:
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```yaml
+states_and_ut_india: ^1.0.1
+```
+
+## Usage
+
+### Note
+
+- All methods that take a string are case-insensitive. No need to adjust case before passing string into a method.
+
+### Get a state's name from an abbreviation
+
+Returns empty string if not found.
+
+```dart
+INStates.getName("KA");
+// returns "Karnataka"
+```
+
+### Get a state's abbreviation from name
+
+Returns empty string if not found.
+
+```dart
+INStates.getAbbreviation("Karnataka");
+// returns "KA"
+```
+
+### Get a list of all state names
+
+```dart
+INStates.getAllStateNamesList();
+// returns ["Andhra Pradesh", "Andaman and Nicobar Islands", ...]
+```
+
+### Get a list of all state abbreviations
+
+```dart
+INStates.getAllAbbreviationsList();
+// returns ["AP", "AN", ...]
+```
+
+### Get a map with state abbreviations as keys and names as values
+
+```dart
+INStates.getAbbreviationMap();
+// returns {"AP": "Andhra Pradesh",  "AN": "Andaman and Nicobar Islands", ...}
+```
+
+### Get a map with state names as keys and abbreviations as values
+
+```dart
+INStates.getNameMap();
+// returns {"Alaska": "AK", "Alabama": "AL", ...}
+```
+
+## Note
+
+- This app is inspired by [us_states](https://pub.dev/packages/us_states).

@@ -14,16 +14,7 @@ states_and_ut_india: ^1.0.1
 
 ### Note
 
-- All methods that take a string are case-insensitive. No need to adjust case before passing string into a method.
-
-### Get a state's name from an abbreviation
-
-Returns empty string if not found.
-
-```dart
-INStates.getName("KA");
-// returns "Karnataka"
-```
+- All methods that take a string are case-insensitive.
 
 ### Get a state's abbreviation from name
 
@@ -34,11 +25,13 @@ INStates.getAbbreviation("Karnataka");
 // returns "KA"
 ```
 
-### Get a list of all state names
+### Get a state's name from an abbreviation
+
+Returns empty string if not found.
 
 ```dart
-INStates.getAllStateNamesList();
-// returns ["Andhra Pradesh", "Andaman and Nicobar Islands", ...]
+INStates.getName("KA");
+// returns "Karnataka"
 ```
 
 ### Get a list of all state abbreviations
@@ -46,6 +39,13 @@ INStates.getAllStateNamesList();
 ```dart
 INStates.getAllAbbreviationsList();
 // returns ["AP", "AN", ...]
+```
+
+### Get a list of all state names
+
+```dart
+INStates.getAllStateNamesList();
+// returns ["Andhra Pradesh", "Andaman and Nicobar Islands", ...]
 ```
 
 ### Get a map with state abbreviations as keys and names as values
@@ -59,7 +59,7 @@ INStates.getAbbreviationMap();
 
 ```dart
 INStates.getNameMap();
-// returns {"Alaska": "AK", "Alabama": "AL", ...}
+// returns {"Andhra Pradesh": "AP", "Andaman and Nicobar Islands": "AN", ...}
 ```
 
 ## Note

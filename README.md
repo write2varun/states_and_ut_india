@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/write2varun/states_and_ut_india.svg?style=svg)](https://circleci.com/gh/write2varun/states_and_ut_india)
+[![Buy Me A Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-yellow.svg)](https://www.buymeacoffee.com/write2varun)
+
 # states_and_ut_india
 
 A simple Dart library to convert state names to abbreviations and vice-versa

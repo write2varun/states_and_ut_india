@@ -9,7 +9,7 @@ A simple Dart library to convert state names to abbreviations and vice-versa
 
 Add the following to `dependencies` section in your pubspec.yml:
 
-```yaml
+```dart
 states_and_ut_india: ^1.0.1
 ```
 
